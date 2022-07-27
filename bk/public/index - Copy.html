@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My FavoriOne</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light"
+      style="
+        background-color: #e3f2fd;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px solid green;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img src="https://frontendtest.favorione.com/Content/Images/logo.svg" alt=""
+          style="width: 50px; height: 50px; margin-top: 5px;">
+          <a class="navbar-brand" 
+          href="#" style="margin-left: 10px;"
+          >FavoriOne</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                name="search"
+              />
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"
+              ><span class="glyphicon glyphicon-log-in"></span>Sign In</a
+            >
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Suppport<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Report a Bug!</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav
+      class="navbar navbar-light"
+      style="background-color: #add8e6; maring-top: 0p; padding-top: 0p"
+    >
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-center">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Movies<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="./Action.html">Action</a></li>
+              <li><a href="./Drama.html">Drama</a></li>
+              <li><a href="./Animated.html">Animated</a></li>
+              <li><a href="./Disney.html">Disney</a></li>
+              <li><a href="./ScienceFiction.html">Science Fiction</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Books<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sci-Fi</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Game<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Strategy</a></li>
+              <li><a href="#">Sport</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Music<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Coat</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >House<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Fruit</a></li>
+              <li><a href="#">Not Fruits</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Soap<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Hand soap Real Ren</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Electronics<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">HiFi</a></li>
+              <li><a href="#">Cables</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+              >Cleaning<span class="caret"></span
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Face</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mvdiv">
+
+    </div>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><b> Current Compaigns</b></h2>
+          <div
+            id="myCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="0"
+          >
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner" id="mvdiv2">
+            </div>
+            <!-- Carousel controls -->
+            <a
+              class="carousel-control-prev"
+              href="#myCarousel"
+              data-slide="prev"
+            >
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#myCarousel"
+              data-slide="next"
+            >
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-12">
+          <h2><b> POPULAR PRODUCTS</b></h2>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://assets.favorione.com/9c31ba53-2d29-42f6-99f2-3fb8a223bcda.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Wireworld USB Starlight 7</h4>
+                  <p class="item-price">
+                    <b>1,000.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://assets.favorione.com/48d498b9-88ae-4901-87bc-a0842d58017e.png"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Bygg mechs med Mulle Meck</h4>
+                  <p class="item-price">
+                     <b>1,450.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://assets.partyking.org/img/products/1300/hasthuvud-gummimask-1.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Hest</h4>
+                  <p class="item-price">
+                    <b>69,00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1430055209l/76679.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Forward the Foundation</h4>
+                  <p class="item-price">
+                   <b>109,00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://media.gq.com/photos/56e71c0b14cbe0637b261d7f/4:3/w_2260,h_1695,c_limit/horseinsuit2.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 id="special">
+                  </h4>
+                  <p class="item-price">
+                    <strike>1,337.00 kr</strike> <b>37.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/lPZBtqGE90ghaFhBsdqae7AeEPM.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4> Perfect Blue</h4>
+                  <p class="item-price">
+                    <strike>309.00 kr</strike> <b>240.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/hyMIrqdzHTce6XdQAmm3rcqSwl7.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Wonder Woman</h4>
+                  <p class="item-price">
+                    <b>119.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/5qVjJGzPokkK7OYA65hYb1fGsJQ.jpg"
+                    width="180px"
+                    height="150px"
+                    alt=""
+                  />
+                </div>
+                <div class="card-body">
+                  <h4>Karate Kid III - man mot man</h4>
+                  <p class="item-price">
+                   <b>99.00 kr</b>
+                  </p>
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-footer w-container">
+            <div class="w-row">
+              <div class="footer-column w-clearfix w-col w-col-4"><img src="https://frontendtest.favorione.com/Content/Images/logo.svg" alt="" width="40" class="failory-logo-image">
+                <h3 class="footer-failory-name">FavoriOne</h3>
+                <p class="footer-description-failory">Our products will be sent out within 24 hours if they are in stock. All prices are in Swedish kronor including VAT.<br></p>
+              </div>
+              <div class="footer-column w-col w-col-8">
+                <div class="w-row">
+                  <div class="w-col w-col-8">
+                    <div class="w-row">
+                      <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                        <h3 class="footer-titles">About FavoriOne</h3>
+                        <p class="footer-links"><a href="" target="_blank"><span class="footer-link">About Us <br></span></a><a href=""><span class="footer-link">Contact<br></span></a><a href=""><span class="footer-link">Common Questions</span></a><span><br></span><a href=""><span class="footer-link">Franchise<br></span></a><a href=""><span class="footer-link">Press<br></span></a><a href=""></a><strong><br></strong></p>
+                      </div>
+                      <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                        <h3 class="footer-titles">Information</h3>
+                        <p class="footer-links"><a href=""><span class="footer-link">Term of Sale <br></span></a><a href=""><span class="footer-link">Delivery Information<br></span></a><a href=""><span class="footer-link"></span></a><a href=""><span class="footer-link">Shipping Information<br></span></a><a href=""><span class="footer-link">Payment Information</span></a> <a href=""><span class="footer-link">Privacy Policy<br></span></a><strong><br></strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-center-mobile w-col w-col-4">
+                    <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg" width="20" alt="Twitter icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg" width="20" alt="Instagram icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg" width="20" alt="Facebook Icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg" width="20" alt="LinkedIn Icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg" width="20" alt="Pinterest Icon" class=""></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>

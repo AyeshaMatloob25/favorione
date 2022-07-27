@@ -1,0 +1,108 @@
+{
+    "Movies" : [
+        {
+            "Name": "Fruit",
+            "ReducedPrice": "1337.00" ,
+            "ActualPrice": "37.00 " ,
+            "Image" : "https://media.gq.com/photos/56e71c0b14cbe0637b261d7f/4:3/w_2260,h_1695,c_limit/horseinsuit2.jpg",
+            "StockStatus" : 1,
+            "Category": "Drama"
+        },
+        {
+            "Name": "The Lion King 4",
+            "ReducedPrice": "199.00",
+            "ActualPrice": "39.00" ,
+            "Image" : "https://i.ytimg.com/vi/qi-Q73RSF_c/maxresdefault.jpg",
+            "StockStatus" : 1,
+            "Category": "Drama"
+        },
+        {
+            "Name": "Perfect Blue",
+            "ReducedPrice": "309.00",
+            "ActualPrice": "240.00" ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/lPZBtqGE90ghaFhBsdqae7AeEPM.jpg",
+            "StockStatus" : 1,
+            "Category": "Action"
+        },
+        {
+            "Name": "Frozen",
+            "ReducedPrice": "169.00",
+            "ActualPrice": "124.00 ",
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5WSoj6TZZzAHpuuRUN5v8KBg9Wj.jpg",
+            "StockStatus" : 1,
+            "Category": "Animated"
+        },
+        {
+            "Name": "Bygg bilar med Mulle Meck",
+            "ReducedPrice": "859.00" ,
+            "ActualPrice": "834.00 " ,
+            "Image" : "https://assets.favorione.com/76390bd9-044c-44fd-ae91-c58aac268493.jpg",
+            "StockStatus" : 1,
+            "Category": "Animated"
+        },
+        {
+            "Name": "Matrix",
+            "ReducedPrice": "99.00",
+            "ActualPrice": "80.00" ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+            "StockStatus" : 1,
+            "Category": "Action"
+        },
+        {
+            "Name": "The space empire strikes back",
+            "ReducedPrice": "119.00",
+            "ActualPrice": "109.00" ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/7BuH8itoSrLExs2YZSsM01Qk2no.jpg",
+            "StockStatus" : 1,
+            "Category": "ScienceFiction"
+        },
+        {
+            "Name": "Star Trek",
+            "ReducedPrice": "79.00",
+            "ActualPrice": "69.00 ",
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/jjV37zLlE4guejPkkhvmHqSGh4u.jpg",
+            "StockStatus" : 1,
+            "Category": "ScienceFiction"
+        },
+        {
+            "Name": "Karate Kid III- Man against man",
+            "ReducedPrice": "" ,
+            "ActualPrice": "99.00 " ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/5qVjJGzPokkK7OYA65hYb1fGsJQ.jpg",
+            "StockStatus" : 1,
+            "Category": "Action"
+        },
+        {
+            "Name": "Wonder Woman",
+            "ReducedPrice": "",
+            "ActualPrice": "119.00" ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/hyMIrqdzHTce6XdQAmm3rcqSwl7.jpg",
+            "StockStatus" : 1,
+            "Category": "Action"
+        },
+        {
+            "Name": "Toy Story 4",
+            "ReducedPrice": "",
+            "ActualPrice": "199.00" ,
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/fIN7kEcBCUPlRB18A3wvnJsLjzm.jpg",
+            "StockStatus" : 1,
+            "Category": "Animated"
+        },
+        {
+            "Name": "Spirited Away",
+            "ReducedPrice": "",
+            "ActualPrice": "319.00 ",
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/64agjD5FZIVjUz5fuRaFcdUT3KY.jpg",
+            "StockStatus" : 1,
+            "Category": "Animated"
+        },
+        {
+            "Name": "Tangled",
+            "ReducedPrice": "",
+            "ActualPrice": "119.00 ",
+            "Image" : "https://image.tmdb.org/t/p/w600_and_h900_bestv2/uBwjrQfAErMnyTng1NRUj2viBib.jpg",
+            "StockStatus" : 1,
+            "Category": "Disney"
+        }
+    ]
+}

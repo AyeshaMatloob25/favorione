@@ -14,23 +14,19 @@ function NavBar(props) {
             </a>
             <ul className="dropdown-menu">
               <li>
-                <a onClick={() => props.setMovieCategory("Action")}>Action</a>
+                <a href={props.setMovieCat("Action")}>Action</a>
               </li>
               <li>
-                <a onClick={() => props.setMovieCategory("Drama")}>Drama</a>
+                <a href={props.setMovieCat("Drama")}>Drama</a>
               </li>
               <li>
-                <a onClick={() => props.setMovieCategory("Animated")}>
-                  Animated
-                </a>
+                <a href={props.setMovieCat("Animated")}>Animated</a>
               </li>
               <li>
-                <a onClick={() => props.setMovieCategory("Disney")}>Disney</a>
+                <a href="./Disney.html">Disney</a>
               </li>
               <li>
-                <a onClick={() => props.setMovieCategory("ScienceFiction")}>
-                  Science Fiction
-                </a>
+                <a href="./ScienceFiction.html">Science Fiction</a>
               </li>
             </ul>
           </li>
@@ -89,22 +85,15 @@ function Carousal(props) {
 
 function ResultView(props) {
   return (
-    <div className="container-xl">
+    <div class="container-xl">
       <ResultRowData Movies={props.Movies} />
     </div>
   );
 }
+export default function App() {
+  const [Movies, fetchMovies] = useState([]);
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      Movies: [],
-      Category: "Action",
-    };
-    this.setMovieCategory = this.setMovieCategory.bind(this);
-  }
-  componentDidMount() {
+  const getData = () => {
     fetch("http://localhost:3000/movies.json")
       .then((response) => {
         if (!response.ok) {
@@ -114,29 +103,26 @@ class App extends React.Component {
       })
       .then((json) => {
         console.log(json.Movies);
-        this.setState({ Movies: json.Movies });
+        fetchMovies(json.Movies);
       });
-  }
+  };
 
-  setMovieCategory(newCategory) {
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const setMovieCategory = (newCategory) => {
     console.log(newCategory);
-    this.setState({ Category: newCategory });
-  }
+    this.setState({
+      category: newCategory,
+    });
+  };
 
-  render() {
-    let Movies = this.state.Movies;
-    if (Movies.length && this.state.Category) {
-      console.log(this.state.Category);
-      Movies = Movies.filter((movie) => movie.Category === this.state.Category);
-    }
-    return (
-      <div>
-        <NavBar setMovieCategory={this.setMovieCategory}></NavBar>
-        <Carousal Movies={this.state.Movies}></Carousal>
-        <ResultView Movies={Movies} />
-      </div>
-    );
-  }
+  return (
+    <div>
+      <NavBar setMovieCat={setMovieCategory} />
+      <Carousal Movies={Movies} />
+      <ResultView Movies={Movies} />
+    </div>
+  );
 }
-
-export default App;
